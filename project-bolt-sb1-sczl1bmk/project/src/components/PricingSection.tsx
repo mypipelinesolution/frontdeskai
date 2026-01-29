@@ -16,6 +16,8 @@ const PricingSection = () => {
       console.log('Price ID:', priceId);
       console.log('Product:', productName);
       console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL);
+      console.log('Supabase Anon Key exists:', !!import.meta.env.VITE_SUPABASE_ANON_KEY);
+      console.log('Supabase Anon Key (first 20 chars):', import.meta.env.VITE_SUPABASE_ANON_KEY?.substring(0, 20));
       console.log('Full endpoint:', `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-checkout`);
 
       const requestBody = { price_id: priceId };
