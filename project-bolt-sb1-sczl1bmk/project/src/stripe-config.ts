@@ -10,8 +10,8 @@ export interface StripeProduct {
 
 export const STRIPE_PRODUCTS: StripeProduct[] = [
   {
-    id: 'prod_TrbS8veJ0LPplA',
-    priceId: 'price_1StsFsPbfTJTNa5AOU7efEPQ',
+    id: 'prod_TsRz1hRADSpysT',
+    priceId: 'price_1Suh5hBVIKlJaihH4SC447x7',
     name: 'FrontDesk AI Pro — Starter',
     description: '24/7 AI Chat + SMS, Call Answering, Basic CRM',
     price: 104.00,
@@ -19,8 +19,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrbHoA8X09QtFN',
-    priceId: 'price_1Sts4vPbfTJTNa5AGANuefZ8',
+    id: 'prod_TsRzcq3DK1J9uV',
+    priceId: 'price_1Suh5mBVIKlJaihHgBIc1xrg',
     name: 'FrontDesk AI Pro — Core',
     description: 'Full AI Front Desk, SMS + Email Campaigns, Booking Automation',
     price: 154.00,
@@ -28,8 +28,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrbYUyLQZunmmf',
-    priceId: 'price_1StsL9PbfTJTNa5Ao4TJoJnB',
+    id: 'prod_TsRzRQm19UY9SW',
+    priceId: 'price_1Suh5eBVIKlJaihHzpdlw7lt',
     name: 'FrontDesk AI Pro — Accelerator',
     description: 'Complete AI Growth System with call answering, automation workflows, analytics, and multi-channel outreach.Fully automate sales and operations.',
     price: 204.00,
@@ -37,8 +37,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TriihtcbpmKSch',
-    priceId: 'price_1StzGqPbfTJTNa5AChHmt0EU',
+    id: 'prod_TsRzmA0KPmxB2d',
+    priceId: 'price_1Suh5ZBVIKlJaihH2XccbctA',
     name: 'FrontDesk AI Pro — DFY Setup',
     description: 'White-glove setup and optimization.We configure, train, launch, and manage your AI system for you.True hands-free automation.',
     price: 497.00,
@@ -46,8 +46,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjC0WXCwDqUFI',
-    priceId: 'price_1StzkPPbfTJTNa5AyvBtyXBe',
+    id: 'prod_TsRzTglVXwZ8nc',
+    priceId: 'price_1Suh5IBVIKlJaihHLWCA4Cbp',
     name: 'AI Webinar Host Bot',
     description: 'Runs automated webinars, presents content, answers questions, and sells packages 24/7.',
     price: 97.00,
@@ -55,8 +55,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjRKcxzfifBtm',
-    priceId: 'price_1StzyEPbfTJTNa5Ai6YGlcyO',
+    id: 'prod_TsRzECbu7yGBIX',
+    priceId: 'price_1Suh5FBVIKlJaihH8n2gdDmp',
     name: 'Advanced Voice Sales Agent',
     description: 'Trained closer Negotiates Books + sells',
     price: 79.00,
@@ -64,8 +64,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjUYL7DOZIuZw',
-    priceId: 'price_1Su01tPbfTJTNa5Ak5vbz9Oz',
+    id: 'prod_TsRzsEzLAlWAFq',
+    priceId: 'price_1Suh5ABVIKlJaihHFWwObEo3',
     name: 'Social DM Automation Bot',
     description: 'full_automation',
     price: 59.00,
@@ -73,8 +73,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjgnYAwSFB0N8',
-    priceId: 'price_1Su0DJPbfTJTNa5Am0h0tM5I',
+    id: 'prod_TsRyDmBHXDkCsk',
+    priceId: 'price_1Suh4xBVIKlJaihHwDbyaehd',
     name: 'Local SEO Content Bot',
     description: 'Responds to DMs Qualifies Routes to checkout',
     price: 49.00,
@@ -82,8 +82,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjZppAoHfmJYD',
-    priceId: 'price_1Su06KPbfTJTNa5AxojrMaYC',
+    id: 'prod_TsRzpy2dZP4O3L',
+    priceId: 'price_1Suh56BVIKlJaihHEKekrtTL',
     name: 'Review Booster Pro',
     description: 'Multi-platform reviews SMS + email requests GMB sync',
     price: 39.00,
@@ -91,8 +91,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjcwHQxLJJrre',
-    priceId: 'price_1Su09bPbfTJTNa5AFXwxPL4O',
+    id: 'prod_TsRyTexcQxJSkf',
+    priceId: 'price_1Suh50BVIKlJaihH3DfD0Bya',
     name: 'White-Label Branding Bot',
     description: 'Custom domain Custom logo Remove FD branding',
     price: 99.00,
@@ -100,8 +100,8 @@ export const STRIPE_PRODUCTS: StripeProduct[] = [
     mode: 'subscription'
   },
   {
-    id: 'prod_TrjxL4iSESO5zD',
-    priceId: 'price_1Su0TgPbfTJTNa5AIvigKgfT',
+    id: 'prod_TsRy3hsmSedGMg',
+    priceId: 'price_1Suh4uBVIKlJaihHnwrUnExy',
     name: 'Partner Referral Manager',
     description: 'Manages referrals Tracks commissions Pays out',
     price: 29.00,

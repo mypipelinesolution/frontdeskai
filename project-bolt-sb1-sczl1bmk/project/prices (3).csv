@@ -1,0 +1,12 @@
+Price ID,Product ID,Product Name,Product Statement Descriptor,Product Tax Code,Description,Created (UTC),Amount,Currency,Interval,Interval Count,Usage Type,Aggregate Usage,Billing Scheme,Trial Period Days,Tax Behavior
+price_1Suh5mBVIKlJaihHgBIc1xrg,prod_TsRzcq3DK1J9uV,FrontDesk AI Pro — Core,FRONTDESK AI PRO,,,2026-01-28 22:20,154.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5hBVIKlJaihH4SC447x7,prod_TsRz1hRADSpysT,FrontDesk AI Pro — Starter,FRONTDESK AI PRO,,,2026-01-28 22:20,104.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5eBVIKlJaihHzpdlw7lt,prod_TsRzRQm19UY9SW,FrontDesk AI Pro — Accelerator,FRONTDESK AI PRO,,,2026-01-28 22:19,204.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5ZBVIKlJaihH2XccbctA,prod_TsRzmA0KPmxB2d,FrontDesk AI Pro — DFY Setup,FRONTDESK AI PRO,,,2026-01-28 22:19,497.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5IBVIKlJaihHLWCA4Cbp,prod_TsRzTglVXwZ8nc,AI Webinar Host Bot,FRONTDESK AI PRO,,,2026-01-28 22:19,97.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5FBVIKlJaihH8n2gdDmp,prod_TsRzECbu7yGBIX,Advanced Voice Sales Agent,FRONTDESK AI PRO,,,2026-01-28 22:19,79.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh5ABVIKlJaihHFWwObEo3,prod_TsRzsEzLAlWAFq,Social DM Automation Bot,FRONTDESK AI PRO,,,2026-01-28 22:19,59.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh56BVIKlJaihHEKekrtTL,prod_TsRzpy2dZP4O3L,Review Booster Pro,FRONTDESK AI PRO,,,2026-01-28 22:19,39.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh50BVIKlJaihH3DfD0Bya,prod_TsRyTexcQxJSkf,White-Label Branding Bot,FRONTDESK AI PRO,,,2026-01-28 22:19,99.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh4xBVIKlJaihHwDbyaehd,prod_TsRyDmBHXDkCsk,Local SEO Content Bot,FRONTDESK AI PRO,,,2026-01-28 22:19,49.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Suh4uBVIKlJaihHnwrUnExy,prod_TsRy3hsmSedGMg,Partner Referral Manager,FRONTDESK AI PRO,,,2026-01-28 22:19,29.00,usd,month,1,licensed,,per_unit,,unspecified
