@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Users, DollarSign, TrendingUp, Clock, Check, X, ExternalLink, Download } from 'lucide-react';
+import { Users, DollarSign, TrendingUp, Check, ExternalLink } from 'lucide-react';
 
 interface Payout {
   id: string;

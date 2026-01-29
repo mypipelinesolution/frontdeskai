@@ -1,19 +1,14 @@
-import React from 'react';
-import { useAuth } from '../hooks/useAuth';
-import SubscriptionStatus from '../components/SubscriptionStatus';
+import { useAuth } from '../contexts/AuthContext';
+import { SubscriptionStatus } from '../components/SubscriptionStatus';
 import { 
-  BarChart3, 
   MessageSquare, 
   Users, 
   Calendar,
-  Settings,
   Bot,
-  Phone,
-  Mail,
   TrendingUp
 } from 'lucide-react';
 
-const DashboardPage: React.FC = () => {
+const DashboardPage = () => {
   const { user, signOut } = useAuth();
 
   const stats = [

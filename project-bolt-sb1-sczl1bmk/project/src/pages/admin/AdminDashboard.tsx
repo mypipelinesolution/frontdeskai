@@ -164,7 +164,7 @@ export function AdminDashboard() {
                 <div key={order.id} className="p-3 bg-slate-50 rounded-lg border border-slate-200">
                   <div className="flex items-start justify-between">
                     <div>
-                      <h4 className="font-semibold text-slate-900">{order.plan.toUpperCase()}</h4>
+                      <h4 className="font-semibold text-slate-900">{(order.plan || 'N/A').toUpperCase()}</h4>
                       <p className="text-sm text-slate-600">${(order.amount / 100).toFixed(2)}/mo</p>
                       {order.referred_by && (
                         <p className="text-xs text-blue-600 mt-1">Ref: {order.referred_by}</p>

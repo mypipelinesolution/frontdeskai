@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { supabase, Workspace } from '../../lib/supabase';
 import { useAuth } from '../../contexts/AuthContext';
-import { Building2, Phone, Globe, Check } from 'lucide-react';
+import { Building2, Phone, Check } from 'lucide-react';
 
 export function Onboarding({ onComplete }: { onComplete: (workspace: Workspace) => void }) {
   const { user } = useAuth();

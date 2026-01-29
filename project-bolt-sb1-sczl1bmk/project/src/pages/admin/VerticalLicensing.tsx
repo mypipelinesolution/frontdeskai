@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Package, DollarSign, Users, TrendingUp, Plus, Check, X, Building2, Zap } from 'lucide-react';
+import { Package, DollarSign, TrendingUp, Plus, Building2, Zap, X } from 'lucide-react';
 
 interface VerticalTemplate {
   id: string;

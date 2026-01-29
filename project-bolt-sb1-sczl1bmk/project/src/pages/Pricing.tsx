@@ -1,11 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { PricingCard } from '../components/PricingCard';
 import { STRIPE_PRODUCTS } from '../stripe-config';
 
 export default function Pricing() {
-  const navigate = useNavigate();
-
   const handleCheckout = async (priceId: string) => {
     try {
       const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-checkout`, {

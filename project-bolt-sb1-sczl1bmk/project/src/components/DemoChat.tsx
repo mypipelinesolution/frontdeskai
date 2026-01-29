@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { X, Send, Minimize2, Maximize2 } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 interface Message {
   id: string;

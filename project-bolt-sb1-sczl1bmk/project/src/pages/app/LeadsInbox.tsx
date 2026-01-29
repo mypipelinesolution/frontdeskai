@@ -50,7 +50,7 @@ export function LeadsInbox({ workspace }: { workspace: Workspace }) {
   };
 
   const filteredLeads = leads.filter(lead => {
-    const matchesSearch = lead.full_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    const matchesSearch = (lead.full_name || lead.name || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
       lead.email?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       lead.phone?.includes(searchTerm);
 

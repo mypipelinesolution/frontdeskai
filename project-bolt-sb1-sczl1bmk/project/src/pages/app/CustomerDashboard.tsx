@@ -144,7 +144,7 @@ export function CustomerDashboard({ workspace }: { workspace: Workspace }) {
                     </span>
                     <span className="text-xs text-slate-500">{message.channel}</span>
                   </div>
-                  <p className="text-sm text-slate-700">{message.body.substring(0, 100)}...</p>
+                  <p className="text-sm text-slate-700">{(message.body || message.content || '').substring(0, 100)}...</p>
                 </div>
               ))}
             </div>

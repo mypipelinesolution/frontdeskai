@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { X, Send, Bot, Loader2 } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { Send, Bot, Loader2 } from 'lucide-react';
 
 interface OnboardingChatProps {
   workspaceId: string;
@@ -12,7 +12,7 @@ interface Message {
   content: string;
 }
 
-const OnboardingChat: React.FC<OnboardingChatProps> = ({ workspaceId, userName, onComplete }) => {
+const OnboardingChat = ({ workspaceId, userName, onComplete }: OnboardingChatProps) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);

@@ -31,7 +31,7 @@ export function Automations({ workspace }: { workspace: Workspace }) {
     await loadAutomations();
   };
 
-  const botTypeInfo = {
+  const botTypeInfo: Record<string, { name: string; description: string; color: string; icon: string }> = {
     instant_reply: {
       name: 'Instant Reply Bot',
       description: 'Responds to new leads within 60 seconds via SMS/email',

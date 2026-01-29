@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useAuth } from '../../lib/auth'
+import { useEffect, useState } from 'react'
+import { useAuth } from '../../contexts/AuthContext'
 import { getUserSubscription } from '../../lib/stripe'
 import { getProductByPriceId } from '../../stripe-config'
 import { Button } from '../ui/Button'

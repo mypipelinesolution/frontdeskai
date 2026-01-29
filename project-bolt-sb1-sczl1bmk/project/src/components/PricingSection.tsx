@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Check, Zap, Star, Crown, MessageCircle, Mail, Phone, Calendar } from 'lucide-react';
-import { stripeProducts, getProductsByCategory, formatPrice } from '../stripe-config';
+import { getProductsByCategory, formatPrice } from '../stripe-config';
 
-const PricingSection: React.FC = () => {
+const PricingSection = () => {
   const [loading, setLoading] = useState<string | null>(null);
 
   const plans = getProductsByCategory('plan');
