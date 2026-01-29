@@ -1,0 +1,13 @@
+Price ID,Product ID,Product Name,Product Statement Descriptor,Product Tax Code,Description,Created (UTC),Amount,Currency,Interval,Interval Count,Usage Type,Aggregate Usage,Billing Scheme,Trial Period Days,Tax Behavior
+price_1Su0TgPbfTJTNa5AIvigKgfT,prod_TrjxL4iSESO5zD,Partner Referral Manager,FRONTDESK AI PRO,,,2026-01-27 00:49,29.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Su0DJPbfTJTNa5Am0h0tM5I,prod_TrjgnYAwSFB0N8,Local SEO Content Bot,FRONTDESK AI PRO,,,2026-01-27 00:33,49.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Su09bPbfTJTNa5AFXwxPL4O,prod_TrjcwHQxLJJrre,White-Label Branding Bot,FRONTDESK AI PRO,,,2026-01-27 00:29,99.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Su06KPbfTJTNa5AxojrMaYC,prod_TrjZppAoHfmJYD,Review Booster Pro,FRONTDESK AI PRO,,,2026-01-27 00:25,39.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Su01tPbfTJTNa5Ak5vbz9Oz,prod_TrjUYL7DOZIuZw,Social DM Automation Bot,FRONTDESK AI PRO,,,2026-01-27 00:21,59.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1StzyEPbfTJTNa5Ai6YGlcyO,prod_TrjRKcxzfifBtm,Advanced Voice Sales Agent,FRONTDESK AI PRO,,,2026-01-27 00:17,79.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1StzkPPbfTJTNa5AyvBtyXBe,prod_TrjC0WXCwDqUFI,AI Webinar Host Bot,FRONTDESK AI PRO,,,2026-01-27 00:03,97.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1StzGqPbfTJTNa5AChHmt0EU,prod_TriihtcbpmKSch,FrontDesk AI Pro — DFY Setup,FRONTDESK AI PRO,,,2026-01-26 23:32,497.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Stt0MPbfTJTNa5A8hi7HYuB,prod_TrcE53emuQvC4Z,FrontDesk AI Pro - PARTNER STARTER,FRONTDESK AI PRO,,,2026-01-26 16:51,52.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1StsL9PbfTJTNa5Ao4TJoJnB,prod_TrbYUyLQZunmmf,FrontDesk AI Pro — Accelerator,FRONTDESK AI PRO,,,2026-01-26 16:08,204.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1StsFsPbfTJTNa5AOU7efEPQ,prod_TrbS8veJ0LPplA,FrontDesk AI Pro — Starter,FRONTDESK AI PRO,,,2026-01-26 16:03,104.00,usd,month,1,licensed,,per_unit,,unspecified
+price_1Sts4vPbfTJTNa5AGANuefZ8,prod_TrbHoA8X09QtFN,FrontDesk AI Pro — Core,FRONTDESK AI PRO,,,2026-01-26 15:51,154.00,usd,month,1,licensed,,per_unit,,unspecified
