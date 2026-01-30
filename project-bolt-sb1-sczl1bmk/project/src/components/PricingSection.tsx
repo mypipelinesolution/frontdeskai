@@ -387,4 +387,5 @@ const PricingSection = () => {
   );
 };
 
+export { PricingSection };
 export default PricingSection;

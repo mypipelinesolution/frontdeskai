@@ -139,4 +139,12 @@ export const getProductsByCategory = (category: 'plan' | 'addon'): StripeProduct
   }
 };
 
+export const getCoreProducts = (): StripeProduct[] => {
+  return STRIPE_PRODUCTS.filter(product =>
+    product.name.includes('Starter') || 
+    product.name.includes('Core') || 
+    product.name.includes('Accelerator')
+  );
+};
+
 export const stripeProducts = STRIPE_PRODUCTS;

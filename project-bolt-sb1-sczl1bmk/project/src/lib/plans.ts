@@ -1,4 +1,4 @@
-export type PlanKey = 'fd_starter' | 'fd_core' | 'fd_pro' | 'fd_dfy';
+export type PlanKey = 'fd_starter' | 'fd_core' | 'fd_pro' | 'fd_dfy' | 'fd_agency_dfy';
 
 export interface PlanDetails {
   key: PlanKey;
@@ -74,6 +74,22 @@ export const PLAN_DETAILS: Record<PlanKey, PlanDetails> = {
       'Referral tracking',
     ],
   },
+  fd_agency_dfy: {
+    key: 'fd_agency_dfy',
+    name: 'Agency DFY',
+    price: 997,
+    amountCents: 99700,
+    priceId: import.meta.env.VITE_STRIPE_PRICE_AGENCY_DFY || '',
+    description: 'PREMIUM GROWTH',
+    features: [
+      'Everything in DFY Setup',
+      'Ad campaign management',
+      'Weekly optimization',
+      'Revenue analytics',
+      'Growth strategy sessions',
+      'Dedicated success manager',
+    ],
+  },
 };
 
 export function getPlanByKey(key: PlanKey): PlanDetails {
@@ -90,4 +106,8 @@ export function getMainPlans(): PlanDetails[] {
 
 export function getDFYPlan(): PlanDetails {
   return PLAN_DETAILS.fd_dfy;
+}
+
+export function getDFYPlans(): PlanDetails[] {
+  return [PLAN_DETAILS.fd_dfy, PLAN_DETAILS.fd_agency_dfy];
 }
