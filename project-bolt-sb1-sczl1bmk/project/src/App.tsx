@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
+import { Layout } from './components/Layout'
 import HomePage from './pages/HomePage'
 import SuccessPage from './pages/SuccessPage'
 import { ThankYou } from './pages/ThankYou'
@@ -27,32 +28,32 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/webinar" element={<WebinarBooking />} />
-          <Route path="/webinar/:bookingId" element={<WebinarRoom />} />
-          <Route path="/success" element={<SuccessPage />} />
-          <Route path="/thank-you" element={<ThankYou />} />
-          <Route path="/partner" element={<PartnerDashboard />} />
+          <Route path="/" element={<Layout><HomePage /></Layout>} />
+          <Route path="/login" element={<Layout><LoginPage /></Layout>} />
+          <Route path="/signup" element={<Layout><SignupPage /></Layout>} />
+          <Route path="/dashboard" element={<Layout showNav={false}><DashboardPage /></Layout>} />
+          <Route path="/pricing" element={<Layout><PricingPage /></Layout>} />
+          <Route path="/webinar" element={<Layout><WebinarBooking /></Layout>} />
+          <Route path="/webinar/:bookingId" element={<Layout><WebinarRoom /></Layout>} />
+          <Route path="/success" element={<Layout><SuccessPage /></Layout>} />
+          <Route path="/thank-you" element={<Layout><ThankYou /></Layout>} />
+          <Route path="/partner" element={<Layout><PartnerDashboard /></Layout>} />
 
           {/* Industry Landing Pages */}
-          <Route path="/industries/cleaning" element={<CleaningPage />} />
-          <Route path="/industries/tree" element={<TreePage />} />
-          <Route path="/industries/medspa" element={<MedSpaPage />} />
-          <Route path="/industries/contractor" element={<ContractorPage />} />
-          <Route path="/industries/realestate" element={<RealEstatePage />} />
+          <Route path="/industries/cleaning" element={<Layout><CleaningPage /></Layout>} />
+          <Route path="/industries/tree" element={<Layout><TreePage /></Layout>} />
+          <Route path="/industries/medspa" element={<Layout><MedSpaPage /></Layout>} />
+          <Route path="/industries/contractor" element={<Layout><ContractorPage /></Layout>} />
+          <Route path="/industries/realestate" element={<Layout><RealEstatePage /></Layout>} />
 
           {/* Partner Public Pages */}
-          <Route path="/p/:slug" element={<PartnerPublicPage />} />
+          <Route path="/p/:slug" element={<Layout><PartnerPublicPage /></Layout>} />
 
           {/* Enterprise White-Label Pages */}
-          <Route path="/enterprise" element={<EnterpriseLanding />} />
-          <Route path="/enterprise/replay" element={<EnterpriseReplay />} />
-          <Route path="/enterprise/apply" element={<EnterpriseApplication />} />
-          <Route path="/enterprise/offer" element={<EnterpriseOffer />} />
+          <Route path="/enterprise" element={<Layout><EnterpriseLanding /></Layout>} />
+          <Route path="/enterprise/replay" element={<Layout><EnterpriseReplay /></Layout>} />
+          <Route path="/enterprise/apply" element={<Layout><EnterpriseApplication /></Layout>} />
+          <Route path="/enterprise/offer" element={<Layout><EnterpriseOffer /></Layout>} />
         </Routes>
       </Router>
     </AuthProvider>
