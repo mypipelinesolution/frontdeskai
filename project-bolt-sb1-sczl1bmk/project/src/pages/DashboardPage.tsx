@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useWorkspace } from '../hooks/useWorkspace';
 import { SubscriptionStatus } from '../components/SubscriptionStatus';
@@ -21,6 +22,13 @@ const DashboardPage = () => {
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
   const { workspace, loading } = useWorkspace();
+
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!user && !loading) {
+      navigate('/login');
+    }
+  }, [user, loading, navigate]);
 
   const stats = [
     { name: 'Total Conversations', value: '2,847', icon: MessageSquare, change: '+12%' },
