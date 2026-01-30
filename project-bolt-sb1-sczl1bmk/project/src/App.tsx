@@ -6,6 +6,7 @@ import { ThankYou } from './pages/ThankYou'
 import { PricingPage } from './pages/PricingPage'
 import { LoginPage } from './pages/LoginPage'
 import { SignupPage } from './pages/SignupPage'
+import DashboardPage from './pages/DashboardPage'
 import PartnerDashboard from './pages/PartnerDashboard'
 import { WebinarBooking } from './pages/WebinarBooking'
 import { WebinarRoom } from './pages/WebinarRoom'
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/webinar" element={<WebinarBooking />} />
           <Route path="/webinar/:bookingId" element={<WebinarRoom />} />
