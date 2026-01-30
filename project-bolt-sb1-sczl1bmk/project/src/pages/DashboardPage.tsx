@@ -61,8 +61,7 @@ const DashboardPage = () => {
   const hasActiveSubscription = workspace && workspace.stripe_subscription_id;
 
   return (
-    <div className="min-h-screen cosmic-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {hasActiveSubscription ? (
           // ACTIVE SUBSCRIPTION VIEW - Full Dashboard
           <>
@@ -190,7 +189,6 @@ const DashboardPage = () => {
             </div>
           </>
         )}
-      </div>
     </div>
   );
 };
