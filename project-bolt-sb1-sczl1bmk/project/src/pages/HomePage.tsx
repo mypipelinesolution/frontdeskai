@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
 import PricingSection from '../components/PricingSection';
+import { ChatWidget } from '../components/ChatWidget';
 
 const HomePage: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage: React.FC = () => {
       <Navigation />
       <HeroSection />
       <PricingSection />
+      <ChatWidget />
     </div>
   );
 };
