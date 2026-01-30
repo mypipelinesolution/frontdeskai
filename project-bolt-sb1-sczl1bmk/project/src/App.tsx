@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage'
 import SuccessPage from './pages/SuccessPage'
 import { ThankYou } from './pages/ThankYou'
 import { PricingPage } from './pages/PricingPage'
+import { LoginPage } from './pages/LoginPage'
+import { SignupPage } from './pages/SignupPage'
 import PartnerDashboard from './pages/PartnerDashboard'
 import { WebinarBooking } from './pages/WebinarBooking'
 import { WebinarRoom } from './pages/WebinarRoom'
@@ -25,6 +27,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/webinar" element={<WebinarBooking />} />
           <Route path="/webinar/:bookingId" element={<WebinarRoom />} />

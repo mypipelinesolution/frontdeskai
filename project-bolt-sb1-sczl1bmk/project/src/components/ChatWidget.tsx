@@ -65,6 +65,10 @@ export function ChatWidget({ workspaceId, leadId, position = 'bottom-right' }: C
           workspaceId: workspaceId || null,
           leadId: leadId || null,
           referral_slug: readReferralSlug(),
+          context: {
+            mode: 'demo',
+            userName: 'Visitor',
+          },
         }),
       });
 
