@@ -32,9 +32,19 @@ export function SignupPage() {
 
       if (data.user) {
         setSuccess(true);
-        setTimeout(() => {
-          navigate('/pricing');
-        }, 2000);
+        
+        // Check if user was trying to purchase before signup
+        const intendedPurchase = sessionStorage.getItem('intended_purchase');
+        if (intendedPurchase) {
+          sessionStorage.removeItem('intended_purchase');
+          setTimeout(() => {
+            navigate('/pricing');
+          }, 1500);
+        } else {
+          setTimeout(() => {
+            navigate('/pricing');
+          }, 2000);
+        }
       }
     } catch (err: any) {
       setError(err.message || 'Failed to create account');

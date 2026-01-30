@@ -1,14 +1,27 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Check, Zap, Star, Crown, MessageCircle, Mail, Phone, Calendar } from 'lucide-react';
 import { getProductsByCategory, formatPrice } from '../stripe-config';
+import { useAuth } from '../contexts/AuthContext';
+import { readReferralSlug } from '../lib/referral';
 
 const PricingSection = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
   const [loading, setLoading] = useState<string | null>(null);
 
   const plans = getProductsByCategory('plan');
   const addons = getProductsByCategory('addon');
 
   const handleCheckout = async (priceId: string, productName: string) => {
+    // Require login before checkout
+    if (!user) {
+      // Store the intended purchase in sessionStorage
+      sessionStorage.setItem('intended_purchase', JSON.stringify({ priceId, productName }));
+      navigate('/signup');
+      return;
+    }
+
     setLoading(priceId);
 
     try {
