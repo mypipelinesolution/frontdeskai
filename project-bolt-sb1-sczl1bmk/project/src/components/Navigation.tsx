@@ -11,6 +11,9 @@ const Navigation: React.FC = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If section doesn't exist, navigate to home first
+      navigate('/', { state: { scrollTo: sectionId } });
     }
   };
 
@@ -18,6 +21,8 @@ const Navigation: React.FC = () => {
     const demoForm = document.querySelector('form');
     if (demoForm) {
       demoForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else {
+      navigate('/', { state: { scrollTo: 'demo' } });
     }
   };
 
@@ -59,7 +64,7 @@ const Navigation: React.FC = () => {
             </button>
             
             {user ? (
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-6">
                 <button
                   onClick={() => navigate('/dashboard')}
                   className="text-gray-300 hover:text-white transition-colors text-base font-medium"
@@ -67,11 +72,24 @@ const Navigation: React.FC = () => {
                   Dashboard
                 </button>
                 <button
-                  onClick={handleLogout}
+                  onClick={() => navigate('/pricing')}
                   className="text-gray-300 hover:text-white transition-colors text-base font-medium"
                 >
-                  Logout
+                  Upgrade
                 </button>
+                <div className="flex items-center gap-3 px-4 py-2 bg-white/10 rounded-lg">
+                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">
+                      {user.email?.charAt(0).toUpperCase()}
+                    </span>
+                  </div>
+                  <button
+                    onClick={handleLogout}
+                    className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                  >
+                    Logout
+                  </button>
+                </div>
               </div>
             ) : (
               <div className="flex items-center gap-4">
