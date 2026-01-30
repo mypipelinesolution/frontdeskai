@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<Layout><HomePage /></Layout>} />
           <Route path="/login" element={<Layout><LoginPage /></Layout>} />
           <Route path="/signup" element={<Layout><SignupPage /></Layout>} />
-          <Route path="/dashboard" element={<Layout showNav={false}><DashboardPage /></Layout>} />
+          <Route path="/dashboard" element={<Layout><DashboardPage /></Layout>} />
           <Route path="/pricing" element={<Layout><PricingPage /></Layout>} />
           <Route path="/webinar" element={<Layout><WebinarBooking /></Layout>} />
           <Route path="/webinar/:bookingId" element={<Layout><WebinarRoom /></Layout>} />
